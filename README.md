@@ -8,4 +8,4 @@ I just finished my 'Web and mobile web developer' training at O'Clock school and
 
 Ceci est mon portfolio en tant que developpeur web.
 
-Je viens de finir ma formation 'Déveloper web et web mobile' au sein de l'école O'Clock et je recherche maintenant un poste de developer web junior.
+Je viens de finir ma formation 'Développeur web et web mobile' au sein de l'école O'Clock et je recherche maintenant un poste de developpeur web junior.
