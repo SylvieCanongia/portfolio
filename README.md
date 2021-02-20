@@ -1,11 +1,11 @@
 # portfolio
 
-This is my portfolio as a web developer.
+Welcome to my JavaScript and Wordpress web developer portfolio.
 
-I just finished my 'Web and mobile web developer' training at O'Clock school and I am now looking for a junior web developer position.
+This portfolio was produced at the end of my training 'Web and mobile web developer' at O'Clock school. It presents my job search as a web developer.
 
--------------------------------------------------------------
+--------------------------------------------------------------
 
-Ceci est mon portfolio en tant que developpeur web.
+Bienvenue sur mon portfolio de developpeur web JavaScript et Wordpress.
 
-Je viens de finir ma formation 'Développeur web et web mobile' au sein de l'école O'Clock et je recherche maintenant un poste de developpeur web junior.
+Ce portfolio a été réalisé à l'issue de ma formation 'Développeur web et web mobile' au sein de l'école O'Clock. Il présente ma recherche de poste en tant que développeur web.
