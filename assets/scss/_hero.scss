@@ -1,0 +1,153 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../images/hero-bg.svg") top center;
+  background-size: cover;
+
+  .hero-img {
+    width: 8%;
+    height: auto;
+    margin-right: 10%;
+  }
+
+  .hero-container {
+    position: relative;
+    z-index: 2;
+    min-width: 45%;
+    max-width: 100%;
+    margin-bottom: 10%;
+
+    &-title,
+    &-hook {
+      background: $white;
+      color: $pink;
+    }
+
+    &-title {
+      padding: $padding-l;
+      text-shadow: 2px 2px 1px #fc90c6;
+      margin: 0 0 10px 0;
+      width: 100%;
+      font-size: clamp(1rem, 0.8714rem + 0.5714vw, 1.55rem);
+    }
+
+    &-hook {
+      padding: $padding-s;
+      font-size: clamp(0.9rem, 0.7364rem + 0.7273vw, 1.6rem);
+    }
+
+    .typed {
+      color: $pink;
+    }
+  }
+
+  h1 {
+    font-weight: 700;
+  }
+
+  h2 {
+    font-weight: 600;
+  }
+
+  p {
+    margin-bottom: 50px;
+    font-size: clamp(1rem, 0.8247rem + 0.7792vw, 1.75rem);
+    font-family: $font-secondary;
+
+    span {
+      color: $white;
+      padding-bottom: 4px;
+      letter-spacing: 1px;
+      border-bottom: 3px solid $primary;
+    }
+  }
+
+  /*----------------
+# Title animation
+-----------------*/
+
+  .text {
+    width: 100%;
+    height: 250px;
+
+    text {
+      color: $pink;
+      stroke-width: $stroke-width;
+      stroke-dashoffset: -800;
+      stroke-dasharray: 800;
+
+      .tspan-h2 {
+        font-size: clamp(1.4rem, 1.2130rem + 0.8312vw, 2.2rem);
+      }
+
+      .line {
+        display: block;
+      }
+
+      &.is-active {
+        animation-name: text;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+
+  @keyframes text {
+    25% {
+      fill: transparent;
+    }
+
+    55% {
+      fill: transparent;
+      stroke-dashoffset: 0;
+      stroke-width: $stroke-width;
+    }
+
+    100% {
+      stroke-dashoffset: 0;
+      fill: $pink;
+      stroke-width: 0px;
+    }
+
+  }
+
+  /* End title animation */
+
+  @media (min-width: 1024px) {
+    background-attachment: fixed;
+
+  }
+
+  @media screen and (max-width: 1199px) {
+    .hero-img {
+      width: 12%;
+    }
+
+    .hero-container {
+      min-width: 90%;
+
+      &-hook {
+        padding: $padding-xs;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    h1 {
+      line-height: 36px;
+    }
+
+    h2 {
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+
+    .hero-img {
+      width: 20%;
+    }
+  }
+}

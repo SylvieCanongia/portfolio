@@ -1,0 +1,680 @@
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-title {
+  padding-bottom: 40px;
+  h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+   
+  }
+
+  h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: $primary;
+    bottom: 0;
+    left: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about {
+
+  .content {
+    h3 {
+      font-weight: 700;
+      color: lighten($secondary, 20);
+    }
+  
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+      }
+
+      strong {
+        margin-right: 10px;
+      }
+
+      i {
+        font-size: 16px;
+        margin-right: 5px;
+        color: $primary;
+        line-height: 0;
+      }
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  img {
+    max-width:90%;
+  }
+
+  &-question {
+    font-size: clamp(1.15rem, 1.1266rem + 0.1039vw, 1.25rem);
+    color: $pink;
+    margin-top: 30px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Figures
+--------------------------------------------------------------*/
+.figures {
+  padding: 0 0 0 30px;
+
+  .count-box {
+    padding: 30px;
+    width: 100%;
+
+    i {
+      display: block;
+      font-size: 44px;
+      color: $primary;
+      float: left;
+      line-height: 0;
+    }
+
+    span {
+      font-size: 48px;
+      line-height: 40px;
+      display: block;
+      font-weight: 700;
+      color: $secondary;
+      margin-left: 60px;
+    }
+
+    p {
+      padding: 15px 0 0 0;
+      margin: 0 0 0 60px;
+      font-family: $font-primary;
+      color: lighten($secondary, 15);
+    }
+
+    a {
+      font-weight: 600;
+      display: block;
+      margin-top: 20px;
+      color: lighten($secondary, 15);
+      font-size: 15px;
+      font-family: $font-secondary;
+      transition: ease-in-out 0.3s;
+      &:hover {
+      color: lighten($secondary, 30);
+      }
+    }
+  }
+
+}
+
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+.skills {
+  background: rgba(0, 194, 240, 0.7);
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .section-title {
+    h2 {
+      color: $white;
+      text-shadow: 1px 2px rgba(0, 0, 0, .7);
+    }
+
+    p {
+      color: #000;
+    }
+  }
+
+  .skills-group {
+    
+    &-title {
+      height: 4.5rem;
+      border-radius: $radius-small;
+    }
+
+    h3 {
+      height: auto;
+      vertical-align: middle;
+      text-align: center;
+      font-size: clamp(1.1rem, 1.0766rem + 0.1039vw, 1.2rem);
+      font-weight: bold;
+  
+      .bx {
+        transition: 0.5s ease-in-out;
+      }
+  
+      .bx:hover {
+        transform:rotate(360deg);
+      }
+    }
+  }
+  
+  .skills-logo-group {
+
+    .skills-logo--center {
+      text-align: center;
+      p {
+        font-size: clamp(0.8rem, 0.7766rem + 0.1039vw, 0.9rem);
+        text-align: center;
+        font-weight: 600;
+        margin-top: 0.4rem;
+      }
+
+      .soon {
+        color: $pink;
+      }
+    }
+
+    .skills-items {
+      
+      li {
+        display: inline-block;
+        padding-bottom: 6px;
+        list-style-type: none;
+        padding: 0 1em;
+        margin: 5px;
+        height: 36px;
+        line-height: 36px;
+        border-radius: 18px;
+        color: #000;
+        background: #fff;
+        border: 1px solid $pink;
+      }
+
+      .soon {
+        color: $pink;
+      }
+    }
+
+    .skills-items li:hover {
+      background: #f393c0;
+      transition: all .2s ease-in-out;
+      border-radius: 15px;
+    }
+  }
+
+    .skills-logo {
+      padding: 0;
+    }
+}
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.resume {
+
+  .resume-title {
+    font-weight: 700;
+    
+    margin-bottom: 25px;
+    color: $secondary;
+
+    &.colored {
+      color: $primary;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+  }
+  
+  .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid lighten($secondary, 30);
+    position: relative;
+
+    h4 {
+      line-height: 18px;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-family: $font-secondary;
+      color: $secondary;
+      margin-bottom: 10px;
+    }
+
+    h5 {
+      font-size: 16px;
+      background: lighten($secondary, 88);
+      padding: 5px 15px;
+      display: inline-block;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        padding-bottom: 10px;
+        // font-size: clamp(0.9rem, 0.8532rem + 0.2078vw, 1.1rem);
+
+        .bx {
+          color: rgba(0, 194, 240, 0.7);
+          font-size: 20px;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: $white;
+    border: 2px solid lighten($secondary, 30);
+  }
+
+}
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+.portfolio {
+
+  .portfolio-item {
+    margin-bottom: 30px;
+  }
+
+  .portfolio-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    
+    $portfolio_wrap_spacing: 0;
+    
+    &::before {
+      content: "";
+      background: rgba($white, 0.5);
+      position: absolute;
+      left: $portfolio_wrap_spacing;
+      right: $portfolio_wrap_spacing;
+      top: $portfolio_wrap_spacing;
+      bottom: $portfolio_wrap_spacing;
+      transition: all ease-in-out 0.3s;
+      z-index: 2;
+      opacity: 0;
+    }
+
+    .portfolio-links {
+      opacity: 1;
+      left: 0;
+      right: 0;
+      bottom: -60px;
+      z-index: 3;
+      position: absolute;
+      transition: all ease-in-out 0.3s;
+      display: flex;
+      justify-content: center;
+
+      a {
+        color: $white;
+        font-size: 28px;
+        text-align: center;
+        background: rgba($primary, .75);
+        transition: 0.3s;
+        width: 50%;
+
+        &:hover {
+          background: rgba($primary, .95);
+        }
+      }
+
+      a + a {
+        border-left: 1px solid lighten($primary, 10);
+      }
+    }
+
+    &:hover {
+      &::before {
+        // top: 0;
+        // left: 0;
+        // right: 0;
+        // bottom: 0;
+        opacity: 1;
+      }
+
+      .portfolio-links {
+        opacity: 1;
+        bottom: 0;
+      }
+      
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.portfolio-details {
+
+  padding-top: 40px;
+
+  .portfolio-details-slider {
+    margin: 50px auto;
+    
+    img {
+      width: 100%;
+    }
+    .swiper-pagination {
+      margin-top: 20px;
+      position: relative;
+
+      .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background-color: #fff;
+        opacity: 1;
+        border: 1px solid $primary;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: $primary;
+      }
+    }
+
+  }
+
+  .portfolio-info {
+    padding: 30px;
+    box-shadow: 0px 0 30px rgba($secondary, 0.08);
+
+    h3 {
+      font-weight: 700;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 15px;
+
+      li +li {
+        margin-top: 10px;
+      }
+    }
+    
+  }
+
+  .portfolio-description {
+    padding-top: 30px;
+    
+    h2 {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    p {
+      padding: 0;
+    }
+  }
+
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact {
+
+  padding-bottom: 60px;
+  padding-top: 10px;
+
+  .info {
+    padding: 30px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0 , 0, .12);
+
+    .bi {
+      font-size: 20px;
+      color: $primary;
+      float: left;
+      width: 44px;
+      height: 44px;
+      background: lighten($primary, 46);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    h4 {
+      padding: 0 0 0 60px;
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: $secondary;
+    }
+
+    p {
+      padding: 0 0 10px 60px;
+      margin-bottom: 20px;
+      // font-size: 14px;
+      color: lighten($secondary, 20);
+    }
+
+    .email {
+      p {
+        padding-top: 5px;
+      }
+    }
+
+    .social-links {
+      padding-bottom: 20px;
+      a {
+        font-size: 20px;
+        display: inline-block;
+        background: lighten($primary, 46);
+        border: 1px solid lighten($primary, 40);
+        color: $primary;
+        line-height: 1;
+        padding: 8px 0;
+        margin-right: 10px;
+        border-radius: 50%;
+        text-align: center;
+        width: 44px;
+        height: 44px;
+        transition: 0.3s;
+        &:hover {
+          background: $primary;
+          color: $white;
+        }
+      }
+    }
+
+    .email:hover, .address:hover, .phone:hover {
+      i {
+        background: $primary;
+        color: $white;
+      }
+    }
+  }
+
+
+  .php-email-form {
+    width: 100%;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 0 24px 0 rgba(0, 0 , 0, .12);
+
+    .form-group {
+      padding-bottom: 8px;
+    }
+
+    .validate {
+      display: none;
+      color: red;
+      margin: 0 0 15px 0;
+      font-weight: 400;
+      // font-size: 13px;
+    }
+    
+    .error-message {
+      display: none;
+      color: #fff;
+      background: #ed3c0d;
+      text-align: left;
+      padding: 15px;
+      font-weight: 600;
+      & br + br {
+        margin-top: 25px;
+      }
+    }
+    
+    .sent-message {
+      display: none;
+      color: #fff;
+      background: #18d26e;
+      text-align: center;
+      padding: 15px;
+      font-weight: 600;
+    }
+  
+    .loading {
+      display: none;
+      background: #fff;
+      text-align: center;
+      padding: 15px;
+  
+      &:before {
+        content: "";
+        display: inline-block;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        margin: 0 10px -6px 0;
+        border: 3px solid #18d26e;
+        border-top-color: #eee;
+        animation: animate-loading 1s linear infinite;
+      }
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      padding-bottom: 8px;
+    }
+
+    input, textarea {
+      border-radius: 0;
+      box-shadow: none;
+      font-size: 14px;
+    }
+
+    input {
+      height: 44px;
+    }
+
+    textarea {
+      padding: 10px 15px;
+    }
+
+    button[type="submit"] {
+      background: $primary;
+      border: 0;
+      padding: 10px 24px;
+      color: #fff;
+      transition: 0.4s;
+      border-radius: 4px;
+      &:hover {
+        background: lighten($primary, 10%);
+      }
+    }
+  
+  }
+
+  @keyframes animate-loading {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+}
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 20px 0;
+  background: lighten($default, 82);
+
+  h2 {
+    // font-size: 26px;
+    font-weight: 300;
+  }
+
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+
+    li + li {
+      padding-left: 10px;
+    }
+
+    li + li::before {
+      display: inline-block;
+      padding-right: 10px;
+      color: lighten($secondary, 10);
+      content: "/";
+    }
+  }
+
+  @media (max-width: 768px) {
+    .d-flex {
+      display: block !important;
+
+    }
+    
+    ol {
+      display: block;
+      li {
+        display: inline-block;
+      }
+      
+    }
+  }
+}
