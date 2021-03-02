@@ -203,8 +203,7 @@ section {
         line-height: 36px;
         border-radius: 18px;
         color: #000;
-        background: #fff;
-        border: 1px solid $pink;
+        background: $white;
       }
 
       .soon {
@@ -222,6 +221,11 @@ section {
     .skills-logo {
       padding: 0;
     }
+
+  #skills-btn-contact {
+    background-color: $pink;
+    color: $white;
+  }
 }
 
 /*--------------------------------------------------------------
