@@ -1,4 +1,4 @@
-import 'typed.js';
+// import 'typed.js';
 
 (function() {
   "use strict";

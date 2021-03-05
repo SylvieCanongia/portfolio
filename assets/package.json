@@ -15,5 +15,9 @@
   "devDependencies": {
     "cssnano": "^4.1.10",
     "sass": "^1.32.7"
+  },
+  "scripts": {
+    "dev": "parcel main.js",
+    "build": "parcel build main.js --public-url /."
   }
 }
