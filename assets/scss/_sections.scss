@@ -4,6 +4,19 @@
 section {
   padding: 60px 0;
   overflow: hidden;
+
+  button[type="button"] {    
+    background: $primary;
+    border: 0;
+    padding: 10px 24px;
+    color: $white;
+    transition: 0.4s;
+    border-radius: 4px;
+    width: 100%;
+    &:hover {
+      background: lighten($primary, 10%);
+    }
+  }
 }
 
 .section-title {
@@ -37,6 +50,17 @@ section {
 --------------------------------------------------------------*/
 .about {
 
+  padding-bottom: 20px;
+
+  .section-title {
+  padding-bottom: 15px;
+
+    h3 {
+    font-weight: 700;
+    color: lighten($secondary, 20);
+    }
+  }
+
   .content {
     h3 {
       font-weight: 700;
@@ -64,19 +88,24 @@ section {
         line-height: 0;
       }
     }
-    p:last-child {
-      margin-bottom: 0;
-    }
   }
 
   img {
-    max-width:90%;
+    max-width:80%;
   }
 
   &-question {
     font-size: clamp(1.15rem, 1.1266rem + 0.1039vw, 1.25rem);
     color: $pink;
     margin-top: 30px;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 768px) {
+  .about {
+    img {
+      max-width:70%;
+    }
   }
 }
 
@@ -222,9 +251,14 @@ section {
       padding: 0;
     }
 
-  #skills-btn-contact {
-    background-color: $pink;
+    button[type="button"] {
+    background: $pink;
     color: $white;
+
+    &:hover {
+      background: lighten($pink, 10%);
+      color: $black;
+    }
   }
 }
 
@@ -235,8 +269,6 @@ section {
 
   .resume-title {
     font-weight: 700;
-    
-    margin-bottom: 25px;
     color: $secondary;
 
     &.colored {
@@ -303,6 +335,19 @@ section {
     background: $white;
     border: 2px solid lighten($secondary, 30);
   }
+
+  // button[type="button"] {    
+  //   background: $primary;
+  //   border: 0;
+  //   padding: 10px 24px;
+  //   color: #fff;
+  //   transition: 0.4s;
+  //   border-radius: 4px;
+  //   width: 100%;
+  //   &:hover {
+  //     background: lighten($primary, 10%);
+  //   }
+  // }
 
 }
 
@@ -550,7 +595,6 @@ section {
       color: red;
       margin: 0 0 15px 0;
       font-weight: 400;
-      // font-size: 13px;
     }
     
     .error-message {
@@ -643,7 +687,6 @@ section {
   background: lighten($default, 82);
 
   h2 {
-    // font-size: 26px;
     font-weight: 300;
   }
 
