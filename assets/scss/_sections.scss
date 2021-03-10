@@ -8,7 +8,7 @@ section {
   button[type="button"] {    
     background: $primary;
     border: 0;
-    padding: 10px 24px;
+    padding: 10px 15px;
     color: $white;
     transition: 0.4s;
     border-radius: 4px;
@@ -336,19 +336,6 @@ section {
     border: 2px solid lighten($secondary, 30);
   }
 
-  // button[type="button"] {    
-  //   background: $primary;
-  //   border: 0;
-  //   padding: 10px 24px;
-  //   color: #fff;
-  //   transition: 0.4s;
-  //   border-radius: 4px;
-  //   width: 100%;
-  //   &:hover {
-  //     background: lighten($primary, 10%);
-  //   }
-  // }
-
 }
 
 /*--------------------------------------------------------------
@@ -538,7 +525,6 @@ section {
     p {
       padding: 0 0 10px 60px;
       margin-bottom: 20px;
-      // font-size: 14px;
       color: lighten($secondary, 20);
     }
 
